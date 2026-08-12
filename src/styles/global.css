@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+/* Subtle 3D background */
+.bg-3d {
+  color: #0f172a;
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(120, 160, 255, 0.28), transparent 55%),
+    radial-gradient(800px 500px at 90% 20%, rgba(255, 160, 220, 0.18), transparent 55%),
+    radial-gradient(700px 500px at 30% 90%, rgba(120, 255, 220, 0.14), transparent 60%),
+    linear-gradient(180deg, #f9fbff 0%, #f3f6ff 100%);
+}
+
+/* Force consistent contrast for any surface cards */
+.bg-white\/45,
+.bg-white\/55 {
+  color: #0f172a;
+}
+
+

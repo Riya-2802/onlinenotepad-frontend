@@ -1,0 +1,25 @@
+/* Shared UI tokens for 3D/light design */
+
+:root{
+  --shadow-3d: 0 18px 40px rgba(16,24,40,.14), 0 2px 0 rgba(255,255,255,.9) inset;
+  --shadow-soft: 0 10px 30px rgba(16,24,40,.10);
+}
+
+/* Apply subtle perspective for a 3D feel */
+.bb3d {
+  perspective: 900px;
+}
+
+.bb3d-card {
+  transform: translateZ(0);
+}
+
+/* Smooth hover lift */
+.bb3d-hover{
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+
+.bb3d-hover:hover{
+  transform: translateY(-2px);
+}
+
